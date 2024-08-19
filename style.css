@@ -1,0 +1,145 @@
+.outerContainer {
+    border: solid green;
+    width: 100%;
+}
+
+.NavBar {
+    border: solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+}
+
+.mainImage {
+    border: solid red;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    background-image: url(https://images.unsplash.com/photo-1481833761820-0509d3217039?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.introContainer {
+    border: solid black;
+    width: 100%;
+}
+
+.logo {
+    border: solid purple;
+    align-items: center;
+    text-align: center;
+    align-self: flex-start;
+    width: 100px;
+    height: 120px;
+}
+
+.menu {
+    border: solid purple;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    background-color: darkgreen;
+    color: white;
+    width: 100px;
+    height: 50px;
+}
+.menu:hover {
+    border: solid purple;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    background-color: rgb(145, 202, 145);
+    color: black;
+    width: 100px;
+    height: 50px;
+}
+
+.catering {
+    border: solid purple;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    background-color: darkgreen;
+    color: white;
+    width: 100px;
+    height: 50px;
+}
+.catering:hover {
+    border: solid purple;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    background-color: rgb(145, 202, 145);
+    color: black;
+    width: 100px;
+    height: 50px;
+}
+
+.specials {
+    border: solid purple;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    background-color: darkgreen;
+    color: white;
+    width: 100px;
+    height: 50px;
+}
+.specials:hover {
+    border: solid purple;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    background-color: rgb(145, 202, 145);
+    color: black;
+    width: 100px;
+    height: 50px;
+}
+
+.about {
+    border: solid purple;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    background-color: darkgreen;
+    color: white;
+    width: 100px;
+    height: 50px;
+}
+
+.about:hover {
+    border: solid purple;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    background-color: rgb(145, 202, 145);
+    color: black;
+    width: 100px;
+    height: 50px;
+}
+
+#header {
+    Color: white;
+    background-color: rgba(0, 0, 0, 0.205);
+    margin: 35px;
+}
+.menuRight {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+}
