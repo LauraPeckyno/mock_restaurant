@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 120px;
+    height: 105px;
     width: 100%;
 }
 
@@ -37,7 +37,7 @@
     text-align: center;
     align-self: flex-start;
     width: 100px;
-    height: 120px;
+    height: 100px;
 }
 
 .menu {
@@ -51,6 +51,7 @@
     width: 100px;
     height: 50px;
 }
+
 .menu:hover {
     border: solid purple;
     align-content: center;
@@ -74,6 +75,7 @@
     width: 100px;
     height: 50px;
 }
+
 .catering:hover {
     border: solid purple;
     align-content: center;
@@ -97,6 +99,7 @@
     width: 100px;
     height: 50px;
 }
+
 .specials:hover {
     border: solid purple;
     align-content: center;
@@ -138,8 +141,15 @@
     background-color: rgba(0, 0, 0, 0.205);
     margin: 35px;
 }
+
 .menuRight {
     display: flex;
     justify-content: space-between;
     align-content: flex-end;
+}
+
+.contentSwapContainer {
+    border: solid yellow;
+    height: 20vh;
+    background-color: aqua;
 }
