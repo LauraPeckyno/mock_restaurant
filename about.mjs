@@ -1,5 +1,4 @@
 // about
-
 // info about owners, location, hours, contact
 
 let cafeOwners = "Bill and Debra Coffeelover";

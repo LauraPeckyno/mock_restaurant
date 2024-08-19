@@ -1,5 +1,4 @@
 // menu 
-
 // include drinks and baked goods
 
 const drinks = [
@@ -116,5 +115,54 @@ const bakedGoods = [
         category: "Pastries and Cookies"
     }
 ];
+
+function createMenu() {
+    const contentSwapContainer = document.querySelector('.contentSwapContainer');
+    contentSwapContainer.innerHTML = '';
+  
+    // Drinks Menu
+    const drinksMenuHtml = drinks.map(drink => {
+      return `
+        <h3>${drink.name}</h3>
+        <p>${drink.description}</p>
+        <ul>
+          ${drink.prices.map(price => {
+            return `<li>${price.size} (${price.ounces}oz): $${price.price}</li>`;
+          }).join('')}
+        </ul>
+      `;
+    }).join('');
+  
+    // Baked Goods Menu
+    const bakedGoodsMenuHtml = bakedGoods.map(item => {
+      if (item.prices) {
+        return `
+          <h3>${item.name}</h3>
+          <p>${item.description}</p>
+          <ul>
+            ${item.prices.map(price => {
+              return `<li>${price.type}: $${price.price}</li>`;
+            }).join('')}
+          </ul>
+        `;
+      } else {
+        return `
+          <h3>${item.name}</h3>
+          <p>${item.description}</p>
+          <p>$${item.price}</p>
+        `;
+      }
+    }).join('');
+  
+    // Append menus to the contentSwapContainer
+    contentSwapContainer.innerHTML += `
+      <h2>Drinks Menu</h2>
+      ${drinksMenuHtml}
+      <h2>Baked Goods Menu</h2>
+      ${bakedGoodsMenuHtml}
+    `;
+  }
+  createMenu();
+
 
 export { drinks, bakedGoods }

@@ -1,5 +1,6 @@
 // catering
 // include the menu items and prices
+
 const cateringBeverages = [
     {
         name: "Coffee",
