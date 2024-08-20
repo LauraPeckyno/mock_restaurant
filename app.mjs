@@ -7,11 +7,7 @@
 // catering
 // specials
 
-import { drinks, bakedGoods } from "./menu.mjs";
-import { cafeOwners, location, phone } from ",/about.mjs";
-import { cafeImages } from "./images.mjs";
-import { cateringPackages, bulkBakedGoods, cateringBeverages } from "./catering.mjs";
-import { specials } from "./specials.mjs";
+import {specials} from './specials.mjs';
 
 // Buttons
 const menuBtn = document.querySelector(".menu"); // menus
@@ -27,23 +23,18 @@ specialsBtn.addEventListener("click", loadSpecials); // specials
 
 // Menu function to take all the specials from the module and add them to the div
 function loadSpecials() {
-  const specialsContainer = document.querySelector('.contentSwapContainer');  // I probably don't eed to do this, but creating a container for specials specifically
+  const specialsContainer = document.querySelector('.contentSwapContainer');  
   specialsContainer.innerHTML = ""; // Clear existing content
 
-  if (specials.length === 0) {
-    console.error("Check back soon for a new SPECIALS MENU!");  // error check in case there are none
-    return;
-  }
-
-  specials.forEach(special => {
+  specials.forEach(special => {  
     const specialDiv = document.createElement('div');
     specialDiv.classList.add('special');
-
-    // create Day headings
+    
+    // Create Day headings
     const dayElement = document.createElement('h3');
     dayElement.textContent = special.day;
 
-    // create special description paragraphs
+    // Create special description paragraphs
     const descriptionElement = document.createElement('p');
     descriptionElement.textContent = special.description;
 
@@ -52,12 +43,9 @@ function loadSpecials() {
     specialDiv.appendChild(descriptionElement);
 
     // Append specialDiv to the container
-    specialContainer.appendChild(specialDiv);
+    specialsContainer.appendChild(specialDiv); 
   });
-
-  console.log("Specials OK");
-}
-
+};
 // TO DO!
 function loadMenu() {
   // TO DO: implement menu 

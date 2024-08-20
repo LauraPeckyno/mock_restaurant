@@ -31,4 +31,4 @@ const specials = [
         },
 ];
 
-export { specials }
+export { specials };
