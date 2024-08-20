@@ -58,15 +58,15 @@ function loadSpecials() {
   console.log("Specials OK");
 }
 
-// Define the other load functions (e.g., loadMenu, loadAbout, loadCatering)
+// TO DO!
 function loadMenu() {
-  // TO DO: implement menu loading logic
+  // TO DO: implement menu 
 }
 
 function loadAbout() {
-  // TO DO: implement about loading logic
+  // TO DO: implement about
 }
 
 function loadCatering() {
-  // TO DO: implement catering loading logic
+  // TO DO: implement catering
 }
