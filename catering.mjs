@@ -29,21 +29,21 @@ const bulkBakedGoods = [
     {
         name: "Muffin Platter",
         description: "A selection of our freshly baked muffins, perfect for a meeting or event.",
-        quantity: "dozen",
+        serves: "12",
         price: 40.00,
         category: "Bulk Baked Goods"
     },
     {
         name: "Cake",
         description: "Our Vanilla Bean Cake or Chocolate Cupcake, available in bulk for special occasions.",
-        quantity: "dozen",
+        serves: "12",
         price: 60.00,
         category: "Bulk Baked Goods"
     },
     {
         name: "Pastry Platter",
         description: "A selection of our flaky pastries and cookies, perfect for a breakfast or snack.",
-        quantity: "dozen",
+        serves: "12",
         price: 50.00,
         category: "Bulk Baked Goods"
     }
